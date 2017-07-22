@@ -1,0 +1,44 @@
+{
+  "session": {
+    "sessionId": "SessionId.1d2945a3-5224-4a0b-8b80-5f69440c1adb",
+    "application": {
+      "applicationId": "amzn1.ask.skill.12db8eb8-6c02-4a38-9ec5-7e779a2b9a07"
+    },
+    "attributes": {
+      "requestType": "setgoal",
+      "newGoal": 7800,
+      "dogs": [
+        {
+          "name": "Chloe",
+          "goal": 7900,
+          "slug": "012873c6-4724-4944-acbc-75cbf60f9fd9",
+          "tzoffset": -18000
+        },
+        {
+          "name": "Charro",
+          "goal": 7900,
+          "slug": "0a847453-715d-4900-a522-4e52da03e4de",
+          "tzoffset": -18000
+        }
+      ],
+      "STATE": "_CONFIRMGOAL",
+      "chosenDogIndex": 1
+    },
+    "user": {
+      "userId": null,
+      "accessToken": null
+    },
+    "new": false
+  },
+  "request": {
+    "type": "IntentRequest",
+    "requestId": "EdwRequestId.c29d0cef-4a23-44af-88d5-2e539c297232",
+    "locale": "en-US",
+    "timestamp": "2017-01-25T00:00:00Z",
+    "intent": {
+      "name": "AMAZON.YesIntent",
+      "slots": {}
+    }
+  },
+  "version": "1.0"
+}

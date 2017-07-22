@@ -1,0 +1,53 @@
+{
+  "intents": [
+    {
+      "name": "AMAZON.CancelIntent",
+      "samples": [
+        "cancel"
+      ]
+    },
+    {
+      "name": "AMAZON.HelpIntent",
+      "samples": [
+        "help"
+      ]
+    },
+    {
+      "name": "AMAZON.StopIntent",
+      "samples": [
+        "stop"
+      ]
+    },
+    {
+      "name": "BatteryIntent",
+      "samples": [
+        "for a battery report",
+        "how much I have left in the battery",
+        "how charged the battery is",
+        "if the battery needs to be charged",
+        "for the battery level",
+        "for the battery percentage"
+      ],
+      "slots": []
+    },
+    {
+      "name": "CompareBreedIntent",
+      "samples": [
+        "for a comparison with similar breeds",
+        "for a comparison with a similar breed",
+        "to compare with similar breeds",
+        "for a breed comparison"
+      ],
+      "slots": []
+    },
+    {
+      "name": "CompareIntent",
+      "samples": [
+        "to compare my dog to other dogs",
+        "for a comparison with other dogs",
+        "for a comparison"
+      ],
+      "slots": []
+    }
+  ]
+}

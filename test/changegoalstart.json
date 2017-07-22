@@ -1,0 +1,25 @@
+{
+  "session": {
+    "sessionId": "SessionId.a18efbca-f83e-47d6-894e-7cb311b27023",
+    "application": {
+      "applicationId": "amzn1.ask.skill.12db8eb8-6c02-4a38-9ec5-7e779a2b9a07"
+    },
+    "attributes": {},
+    "user": {
+      "userId": null,
+      "accessToken": null
+    },
+    "new": true
+  },
+  "request": {
+    "type": "IntentRequest",
+    "requestId": "EdwRequestId.2f683e5d-aac5-4c9c-ac8e-6185d037acf0",
+    "locale": "en-US",
+    "timestamp": "2017-01-25T00:00:00Z",
+    "intent": {
+      "name": "ChangeGoal",
+      "slots": {}
+    }
+  },
+  "version": "1.0"
+}

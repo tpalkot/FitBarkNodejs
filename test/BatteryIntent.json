@@ -1,0 +1,25 @@
+{
+  "session": {
+    "sessionId": "SessionId.665b551a-217f-426f-8948-0b9f1d575b0e",
+    "application": {
+      "applicationId": "amzn1.ask.skill.12db8eb8-6c02-4a38-9ec5-7e779a2b9a07"
+    },
+    "attributes": {},
+    "user": {
+      "userId": null,
+      "accessToken": null
+    },
+    "new": true
+  },
+  "request": {
+    "type": "IntentRequest",
+    "requestId": "EdwRequestId.451cf77c-9427-4e26-ab46-4cd48b9281a7",
+    "locale": "en-US",
+    "timestamp": "2017-01-25T00:00:00Z",
+    "intent": {
+      "name": "BatteryIntent",
+      "slots": {}
+    }
+  },
+  "version": "1.0"
+}

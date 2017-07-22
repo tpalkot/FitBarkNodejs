@@ -1,0 +1,43 @@
+{
+  "session": {
+    "sessionId": "SessionId.0a2ae127-0306-4b71-9509-f520e8533998",
+    "application": {
+      "applicationId": "amzn1.ask.skill.12db8eb8-6c02-4a38-9ec5-7e779a2b9a07"
+    },
+    "attributes": {
+      "requestType": "setgoal",
+      "dogs": [
+        {
+          "name": "Chloe",
+          "goal": 7900
+        },
+        {
+          "name": "Charro",
+          "goal": 7900
+        }
+      ],
+      "STATE": "_CHOOSEDOG"
+    },
+    "user": {
+      "userId": null,
+      "accessToken": null
+    },
+    "new": false
+  },
+  "request": {
+    "type": "IntentRequest",
+    "requestId": "EdwRequestId.a67858ca-4ac0-402e-8e00-13d78f4932e3",
+    "locale": "en-US",
+    "timestamp": "2017-01-25T00:00:00Z",
+    "intent": {
+      "name": "AnswerNumber",
+      "slots": {
+        "AnswerValue": {
+          "name": "AnswerValue",
+          "value": "1"
+        }
+      }
+    }
+  },
+  "version": "1.0"
+}

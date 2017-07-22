@@ -1,0 +1,25 @@
+{
+  "session": {
+    "sessionId": "SessionId.b3a4973e-4bd4-4c1c-8028-eb34e1548a39",
+    "application": {
+      "applicationId": "amzn1.ask.skill.12db8eb8-6c02-4a38-9ec5-7e779a2b9a07"
+    },
+    "attributes": {},
+    "user": {
+      "userId": null,
+      "accessToken": null
+    },
+    "new": false
+  },
+  "request": {
+    "type": "IntentRequest",
+    "requestId": "EdwRequestId.94f983fe-bdd5-4cf7-8185-1198507dd443",
+    "locale": "en-US",
+    "timestamp": "2017-01-25T00:00:00Z",
+    "intent": {
+      "name": "CompareAgeWeight",
+      "slots": {}
+    }
+  },
+  "version": "1.0"
+}
