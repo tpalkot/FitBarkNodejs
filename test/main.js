@@ -44,7 +44,7 @@ var thisContext = context();
 //var launch = require('./comparison.json');
 //var launch = require('./CompareBreed.json');
 var launch = require('./input.json');
-launch.session.user.accessToken=process.env.clientOathKey;
+
 
 //var launch = require('./changegoalstart.json');
 //lambda.handler(launch, thisContext);
@@ -55,4 +55,5 @@ launch.session.user.accessToken=process.env.clientOathKey;
 //var launch = require('./changegoalconfirmno.json');
 //var launch = require('./compareageweight.json');
 //var launch = require('./help.json');
+launch.session.user.accessToken=process.env.clientOathKey;
 lambda.handler(launch, thisContext);

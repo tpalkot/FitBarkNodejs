@@ -3,6 +3,7 @@
 var Alexa = require("alexa-sdk");
 var Client = require('node-rest-client').Client;
 var constants = require("./constants.js");
+var utilities = require("./utilities.js");
 
 var stateHandlers = {
         startGoalDogChoice: function(dogsOwnedByUser){
@@ -141,8 +142,8 @@ function handleNewGoal(){
 
     var aws = this;
 
-    //var currentDateUTC = getDateWithUTCOffset(dogInfo.tzoffset/60/60);
-    var targetDate = getDateYYYYMMDD(new Date());
+    
+    var targetDate = utilities.getDateYYYYMMDD(new Date());
     var args = {
         headers: { "Content-Type": "application/json", "Authorization": "Bearer " + accessToken },
         data: {"daily_goal" : newGoalValue,"date" : targetDate}

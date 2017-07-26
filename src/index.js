@@ -14,6 +14,7 @@ var Alexa = require("alexa-sdk");
 var Client = require('node-rest-client').Client;
 var constants = require("./constants.js");
 var goalChange = require("./goal_change.js");
+var utilities = require("./utilities.js");
 
 exports.handler = function(event, context, callback) {
     var alexa = Alexa.handler(event, context);
@@ -224,7 +225,7 @@ function getBasicSummary(dogsOwnedByUser, includeGoalValue){
         //Get the current date transformed to the user's timezone
         //so that concepts like "today" or "yesterday" don't sound wrong
         //at different times of the day.
-        const currentLocalizedDate = getDateWithUTCOffset(dog.tzoffset/60/60);
+        const currentLocalizedDate = utilities.getDateWithUTCOffset(dog.tzoffset/60/60);
         
         const aweekAgo = new Date(currentLocalizedDate).setDate(currentLocalizedDate.getDate() - 7);
         
@@ -320,43 +321,15 @@ function findDailyGoalForActivityDate(activityDate,dailyGoals){
     return null;
 }
 
-function getDateWithUTCOffset(inputTzOffset){
-    const now = new Date(); // get the current time
-
-    const currentTzOffset = -now.getTimezoneOffset() / 60 // in hours, i.e. -4 in NY
-    const deltaTzOffset = inputTzOffset - currentTzOffset; // timezone diff
-
-    const nowTimestamp = now.getTime(); // get the number of milliseconds since unix epoch 
-    const deltaTzOffsetMilli = deltaTzOffset * 1000 * 60 * 60; // convert hours to milliseconds (tzOffsetMilli*1000*60*60)
-    const outputDate = new Date(nowTimestamp + deltaTzOffsetMilli) // your new Date object with the timezone offset applied.
-
-    return outputDate;
-}
-
-function getDateYYYYMMDD(d) {
-    const month = '' + (d.getMonth() + 1);
-    const day = '' + d.getDate();
-    const year = d.getFullYear();
-
-    if (month.length < 2) month = '0' + month;
-    if (day.length < 2) day = '0' + day;
-    const dateArray = [year, month, day];
-    const resultString = dateArray.join('-');
-    return resultString;
-}
-function getRandomInt(min, max) {
-    return Math.floor(Math.random() * (max - min + 1)) + min;
-}
-
 function getNegativeInterjection(){
     const interjections = ["ahem","ruh roh","argh","aw man","blah","darn","d’oh","shucks","oh brother","phooey","wah wah"];
-    const targetIndex = getRandomInt(0,interjections.length-1);
+    const targetIndex = utilities.getRandomInt(0,interjections.length-1);
     return formatInterjection(interjections[targetIndex]);
 }
 
 function getPositiveInterjection(){
     const interjections = ["woof","all righty","read ‘em and weep","hip hip hooray","oh snap","ooh la la","wahoo","well done","way to go"];
-    const targetIndex = getRandomInt(0,interjections.length-1);
+    const targetIndex = utilities.getRandomInt(0,interjections.length-1);
     return formatInterjection(interjections[targetIndex]);
 }
 
